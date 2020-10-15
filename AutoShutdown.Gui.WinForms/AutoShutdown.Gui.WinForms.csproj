@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AutoShutdown.Classes\AutoShutdown.Classes.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

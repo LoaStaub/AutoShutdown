@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShutdownTimer", "ShutdownTimer\ShutdownTimer.csproj", "{167F88C0-6235-459F-859D-070A84D99F46}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShutdownTimerWin", "ShutdownTimerWin\ShutdownTimerWin.csproj", "{75210943-7801-4295-A674-5749F36679E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoShutdown.Gui.WinForms", "AutoShutdown.Gui.WinForms\AutoShutdown.Gui.WinForms.csproj", "{167F88C0-6235-459F-859D-070A84D99F46}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{63B30157-FF63-42B5-AD77-837FD938BCFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoShutdown.Classes", "AutoShutdown.Classes\AutoShutdown.Classes.csproj", "{F0D6306D-99CB-4BAE-9C6B-419B8A3E8B61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +32,12 @@ Global
 		{63B30157-FF63-42B5-AD77-837FD938BCFE}.Publish|Any CPU.ActiveCfg = Release
 		{63B30157-FF63-42B5-AD77-837FD938BCFE}.Publish|Any CPU.Build.0 = Release
 		{63B30157-FF63-42B5-AD77-837FD938BCFE}.Release|Any CPU.ActiveCfg = Release
+		{F0D6306D-99CB-4BAE-9C6B-419B8A3E8B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D6306D-99CB-4BAE-9C6B-419B8A3E8B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D6306D-99CB-4BAE-9C6B-419B8A3E8B61}.Publish|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D6306D-99CB-4BAE-9C6B-419B8A3E8B61}.Publish|Any CPU.Build.0 = Debug|Any CPU
+		{F0D6306D-99CB-4BAE-9C6B-419B8A3E8B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D6306D-99CB-4BAE-9C6B-419B8A3E8B61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

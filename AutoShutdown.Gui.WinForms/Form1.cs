@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
+using AutoShutdown.Classes;
 
 namespace ShutdownTimer
 {
@@ -58,15 +59,11 @@ namespace ShutdownTimer
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
+            var shutdown = new Shutdown();
             switch (_selectedTab)
             {
                 case 0:
-                    _startDate = DateTime.Now;
-                    _endDate = new DateTime(DatePicker.Value.Year, DatePicker.Value.Month, DatePicker.Value.Day,
-                        TimePicker.Value.Hour, TimePicker.Value.Minute, TimePicker.Value.Second);
-                    var span1 = _endDate - _startDate;
-                    var logic1 = ((span1.Days * 24 + span1.Hours) * 60 + span1.Minutes) * 60 + span1.Seconds;
-                    Process.Start("shutdown", $"/s /t {logic1}");
+                    shutdown.Date(Shutdown.Parse.ParseEndDate(DatePicker.Value, TimePicker.Value));
                     break;
                 case 1:
                     _startDate = DateTime.Now;
